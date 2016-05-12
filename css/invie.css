@@ -9,7 +9,10 @@
 	margin: 10px;
 	border: 2px solid red;
 }*/
-
+/*
+Difuminado de colores para diferentes navegadores
+http://www.colorzilla.com/gradient-editor/
+*/
 body {
 	font-family: 'Allerta', sans-serif;
 	margin: 0;
