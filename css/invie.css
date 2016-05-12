@@ -151,6 +151,7 @@ body {
 
 .footer {
 	background: #273b47;
+	padding: 50px 10px;
 }
 
 .contacto {
@@ -183,7 +184,6 @@ body {
 	display: flex;
 	width: 400px;
 	color: white;
-	padding: 50px 10px;
 }
 
 .col1, .col2 {
@@ -199,6 +199,10 @@ body {
 	align-items: flex-start;
 }
 
+.col2 .button {
+	margin-top:15px;
+}
+
 .intereses label {
 	font-size: 12px;
 }
@@ -206,6 +210,7 @@ body {
 .formulario label, .sexo, .intereses {
 	margin-bottom: 10px;
 }
+
 
 .sexo {
 	margin-top: 10px;
