@@ -7,6 +7,7 @@
 	css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
 	<!-- <link rel="stylesheet" media="(max-width:800px)" type="text/css" href="css/media-querie.css"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
 <body>
 	
@@ -16,7 +17,8 @@
 			<figure class="logotipo"> <!-- logotipo -->
 				<img src="images/invie.png" width="186" height="60" alt="Invie logotipo">
 			</figure>
-			<nav class="menu"><!-- menu -->
+			<span class="burgerbuttom icon-menu" id="burger-buttom"></span>
+			<nav class="menu" id="menu"><!-- menu -->
 				<ul>
 					<li>
 						<a href="index.html">home</a>
@@ -108,7 +110,18 @@
 			</div>
 		</form>	
 	</div>
-			
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		var $burgerButtom = document.getElementById('burger-buttom');
+		var $menu = document.getElementById('menu');
+
+		$burgerButtom.addEventListener('touchstart', toggleMenu);
+
+		function toggleMenu(){
+			$menu.classList.toggle('active');
+		}
+		// $menu.classList.toogle('active')
+	</script>
 	</footer>
 </body>
 </html>
